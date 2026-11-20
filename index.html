@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17263d">
+  <meta name="description" content="Le problème du jour de Rouen Échecs : entraînez-vous sur une position issue d'une partie de haut niveau.">
+  <title>Le problème du jour — Rouen Échecs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="re-puzzle" data-fen="1r2k3/5p2/p3p3/Q2bq3/7p/3Bb3/PPR3pP/1K1R4 w - - 16 38" data-solution="c2g2">
+  <header class="re-head">
+    <div class="re-eyebrow">ROUEN ÉCHECS · ENTRAÎNEMENT</div>
+    <h1>Le problème du jour</h1>
+    <p>Les Blancs jouent. Trouvez le meilleur coup dans cette position.</p>
+    <div class="re-meta">Niveau conseillé : 1600–2000 Elo <span>•</span> Temps : 5 à 10 minutes</div>
+  </header>
+  <div class="re-layout">
+    <div class="re-board-column">
+      <div class="re-board" role="group" aria-label="Échiquier interactif"></div>
+      <div class="re-coordinates" aria-hidden="true"><span>a</span><span>b</span><span>c</span><span>d</span><span>e</span><span>f</span><span>g</span><span>h</span></div>
+    </div>
+    <aside class="re-panel">
+      <div class="re-status" aria-live="polite">À vous de jouer. Sélectionnez une pièce blanche puis sa case de destination.</div>
+      <div class="re-eval" hidden>
+        <div class="re-eval-track"><div class="re-eval-white"></div></div>
+        <div class="re-eval-label">Évaluation après votre coup : <strong>analyse en cours…</strong></div>
+      </div>
+      <div class="re-explanation" hidden></div>
+      <div class="re-actions">
+        <button class="re-retry" type="button" disabled>Recommencer</button>
+        <button class="re-solution-toggle" type="button" hidden>Afficher la solution</button>
+      </div>
+      <div class="re-answer" hidden>
+        <strong>Solution : 38. Rxg2 !</strong>
+        <p>La tour capture le pion passé avant qu’il ne puisse se promouvoir. Dans la partie, Caruana a joué 38. Bxa6 ? et Firouzja a répondu 38...g1=Q.</p>
+      </div>
+      <p class="re-engine-note">L’analyse Stockfish est lancée après votre tentative. Le moteur fonctionne dans votre navigateur.</p>
+    </aside>
+  </div>
+  <footer class="re-footer">© Rouen Échecs</footer>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
